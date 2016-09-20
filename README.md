@@ -11,5 +11,6 @@ Note:  this is an expirimental image
 ```
 docker run -ti --rm -v /shared-on-host:/path-in-container \
   --env "API_KEY=LOOKUP_THIS_KEY_IN_CLIENT"  \
-  --env "TARGET=http://YOUR-RUNNING-SYNCTHING-CLIENT:8384"
+  --env "TARGET=http://YOUR-RUNNING-SYNCTHING-CLIENT:8384" \
+  --name syncthing-inotify jeroenbo/syncthing-inotify
 ```
