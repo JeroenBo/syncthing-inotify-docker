@@ -1,0 +1,6 @@
+{
+  "name": "Syncthing-inotify-docker",
+  "tagline": "Inotify helper for syncthing to enable active sync",
+  "body": "### syncthing-inotify on ubuntu\r\nUse to enable active file sync with syncthing\r\n\r\nImage version: 0.1-alpha\r\n\r\nNote:  this is an expirimental image\r\n\r\n\r\n\r\n*Example startup:*\r\n```\r\ndocker run -ti --rm -v /shared-on-host:/path-in-container \\\r\n  --env \"API_KEY=LOOKUP_THIS_KEY_IN_CLIENT\"  \\\r\n  --env \"TARGET=http://YOUR-RUNNING-SYNCTHING-CLIENT:8384\" \\\r\n  --name syncthing-inotify jeroenbo/syncthing-inotify\r\n```\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
